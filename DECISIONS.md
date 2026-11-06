@@ -4,6 +4,7 @@ Newest first. Every entry was approved by Danny.
 
 | ID | Date | Decision | Why |
 |---|---|---|---|
+| D-009 | 2026-11-06 | `ops-email-digest` v1.0 format approved after the test email (it landed in the Gmail inbox, not spam) | Danny reviewed the real output |
 | D-008 | 2026-11-06 | The repo stores email summaries only, never full bodies | Limits how much Nafas data sits outside Outlook |
 | D-007 | 2026-11-06 | Hired `ops-email-digest`: weekdays 07:45 WIB, emails from Nathan, Nikolas and Ardimas, sent to dannyrizkyp@gmail.com, no reviewer | Daily triage of the three priority senders |
 | D-006 | 2026-11-06 | Outputs live in the GitHub repo; synced to laptop via `git clone` / `git pull` | One source of truth that's reachable from anywhere |
