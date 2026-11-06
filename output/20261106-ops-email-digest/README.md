@@ -9,5 +9,6 @@
 ## Change log
 | Date | Change |
 |---|---|
+| 2026-11-06 | Test digest emailed to dannyrizkyp@gmail.com (approved by Danny). |
 | 2026-11-06 | Weekday 07:45 WIB scheduled task created. It has no connector yet, so it can't read Outlook. |
-| 2026-11-06 | Folder created. First run was a test by the Chief of Staff (`2026-11-06.md`, not emailed). |
+| 2026-11-06 | Folder created. First run was a test by the Chief of Staff (`2026-11-06.md`). |
