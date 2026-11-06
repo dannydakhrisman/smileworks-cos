@@ -7,7 +7,8 @@ Every agent reads this before starting work. Keep it short and factual. Items ma
 - **Name:** Danny Dakhrisman
 - **Day job:** Nafas (indoor air quality company): air purifiers, the Nafas app, Healthy Home Score (HHS)
 - **Work email:** danny@nafas.com (Outlook / Microsoft 365)
-- **Timezone:** GMT+7, Asia/Jakarta *(to confirm)*
+- **Timezone:** GMT+7, Asia/Jakarta (WIB)
+- **Personal email:** dannyrizkyp@gmail.com (digest delivery only)
 - **Languages:** English and Bahasa Indonesia (colleagues often write in Indonesian)
 - **Side project:** YouTube channel "Danny Dakhrisman"
 
@@ -20,8 +21,8 @@ Smileworks is Danny's own company. It has no external customers yet. Its job is 
 | Name | Email | Notes |
 |---|---|---|
 | Nathan Roestandy | nathan@nafas.com | Priority sender |
-| Nikolas | nikolas@nafas.com | Priority sender |
-| Ardimas | ardimas@nafas.com | Priority sender |
+| Nikolas Jalu | nikolas@nafas.com | Priority sender (signs as "Jalu") |
+| Ardimas Purwita | ardimas@nafas.com | Priority sender (often sends Teams invites) |
 
 ## Standards
 
