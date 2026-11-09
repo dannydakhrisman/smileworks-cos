@@ -27,6 +27,20 @@ For any website, landing page or section, Nafas or freelance.
 - Real content and real images only. No lorem ipsum.
 - Works on phone and desktop.
 
+### Design system
+- Nafas: load the skills `nafas-website-design-system`, `nafas-website-icons`,
+  `nafas-website-navbar` and `nafas-website-typescale`, and follow them for
+  color, icons, buttons and layout.
+  - Where a skill disagrees with the type scale below, the type scale wins
+    (it's measured from the live site).
+  - Navbar and footer must match the current live nafas.com. Check the live
+    site first; where the navbar skill differs, the live site wins.
+- Everything else:
+  - Color: one neutral base, one primary color. Green, amber and red only
+    for status (success, warning, error), never as decoration.
+  - Icons: one icon set per site, one line weight, one size grid.
+    No mixing sets.
+
 ### Type
 - Nafas: SF Pro Display, using the Nafas type scale below
   (measured from nafas.com/residential on 2026-11-09).
