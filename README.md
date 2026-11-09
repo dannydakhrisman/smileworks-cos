@@ -9,6 +9,7 @@ Smileworks is Danny's own company run by agents. Claude is the Chief of Staff: e
 | [`PROJECTS.md`](PROJECTS.md) | Every project: what it is, where it lives, what to read first, status. |
 | [`ROSTER.md`](ROSTER.md) | Every agent: job, version, status. |
 | [`DECISIONS.md`](DECISIONS.md) | Log of every decision Danny approved. |
+| [`CHANGELOG.md`](CHANGELOG.md) | What changed in each version (current: v1.1.0). |
 | [`.claude/agents/`](.claude/agents/) | Agent job descriptions (one file = one agent = one job). |
 | [`templates/`](templates/) | Agent and hiring-proposal templates. |
 | [`output/`](output/) | Every deliverable, one folder per piece of work. |

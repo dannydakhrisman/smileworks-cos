@@ -89,3 +89,9 @@ Each agent is one file: `.claude/agents/<agent-name>.md`, based on `templates/ag
 - Source of truth: GitHub repo `dannydakhrisman/smileworks-cos` (private).
 - Laptop: clone the repo and `git pull` to sync (see `README.md`).
 - Cloud sessions are temporary. Work isn't finished until it's committed and pushed.
+
+## 9. Versioning (D-018)
+
+- `CHANGELOG.md` gets one entry per approved change set, in plain words, with the decision IDs it covers.
+- Version numbers: first number for a big redesign (v2.0.0), middle number for new rules, agents or projects (v1.2.0), last number for small fixes (v1.1.1).
+- Agents keep their own version in `ROSTER.md` and in their file. Git history has every line.

@@ -33,3 +33,4 @@
 - 2026-11-09: Added playbooks before agents, evidence rule for reviews, lessons rule and the 2-week trial (D-014, D-015).
 - 2026-11-09: Dropped the offline Nafas skills decision (Danny: too early). Nafas work still reads `nafas-danny-ai/CLAUDE.md` first, which covers it. Renumbered to D-010 to D-016.
 - 2026-11-09: Added `CLAUDE.md` with the session health check (D-017).
+- 2026-11-09: Added `CHANGELOG.md`, v1.1.0 (D-018).

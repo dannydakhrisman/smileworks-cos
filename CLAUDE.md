@@ -13,7 +13,8 @@ Before anything else, run these checks quickly. If everything passes, say one li
 5. **Projects:** for every Active project in `PROJECTS.md`, its **Lives in** path and **Read first** file exist. Only check this on Danny's Mac; skip it in cloud sessions.
 6. **Outputs:** every folder in `output/` is named `yyyymmdd-category-title` with an approved category, and has a `README.md`.
 7. **GitHub account:** this repo pushes as `dannydakhrisman` (`git config --local --get-all credential.https://github.com.helper` mentions it). Skip in cloud sessions.
-8. **Trial review:** if today is 2026-11-23 or later and `DECISIONS.md` has no trial review entry yet, say so first and offer to run the review (D-015).
+8. **Changelog:** the newest decision ID in `DECISIONS.md` appears in `CHANGELOG.md`.
+9. **Trial review:** if today is 2026-11-23 or later and `DECISIONS.md` has no trial review entry yet, say so first and offer to run the review (D-015).
 
 ## Every request
 
