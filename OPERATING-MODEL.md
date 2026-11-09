@@ -8,7 +8,7 @@
 
 ## 2. How a request flows
 
-1. **Understand:** confirm the goal and the expected output. Ask if unclear.
+1. **Understand:** confirm the goal and the expected output. Ask if unclear. Find the project in `PROJECTS.md` and read its **Read first** file.
 2. **Decide:** choose one route:
    - **Do it myself:** small or one-off tasks.
    - **Assign:** an existing agent covers the task.
@@ -32,10 +32,22 @@ The Chief of Staff can proceed without asking only on work Danny already approve
 
 ## 4. Hiring
 
-- When no agent covers a task, the Chief of Staff sends a hiring proposal (`templates/hiring-proposal.md`).
+Keep the team small. Most work is adaptive and different every time, and the Chief of Staff handles that directly with the existing skills and the project's row in `PROJECTS.md`.
+
+- **Playbook before agent.** When the same kind of task comes up a third time, the Chief of Staff first writes a playbook: a short recipe in `playbooks/<name>.md` (steps, skills to load, done when) that it follows itself next time.
+- **Hire only when a job must run on its own or check work independently**: a scheduled job, or a reviewer. A different kind of task each time is never a reason to hire. A hire goes through a hiring proposal (`templates/hiring-proposal.md`).
+- **Hire per job, never per project.** Agents serve every project. A new project gets a row in `PROJECTS.md`, not an agent.
+- **Cap: 5 active agents.** Hiring a 6th means retiring or merging one first.
+- **Pause unused agents.** An agent that hasn't run in 30 days gets proposed for Paused.
 - Proposals for one project come together in a single message.
-- The Chief of Staff also proposes hires on its own when it sees repeated manual work.
-- Prefer hiring for repeat work. One-off tasks are usually handled by the Chief of Staff.
+
+### Lessons
+
+When Danny corrects the same thing twice, it becomes a written rule, so it never needs a third correction. The rule goes where the work starts: the project's **Read first** file (for Nafas, `nafas-danny-ai/lessons.md`), the playbook, or `CONTEXT.md` if it applies everywhere. Where a rule can be a checklist item in a playbook or reviewer, put it there instead of in prose.
+
+### Trial
+
+This setup (D-010 to D-015) is on trial until **2026-11-23**. On that day the Chief of Staff reviews with Danny what helped and what got in the way, and each rule is kept, changed or dropped.
 
 ## 5. Agent naming
 

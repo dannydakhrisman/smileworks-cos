@@ -10,7 +10,7 @@ Every agent reads this before starting work. Keep it short and factual. Items ma
 - **Timezone:** GMT+7, Asia/Jakarta (WIB)
 - **Personal email:** dannyrizkyp@gmail.com (digest delivery only)
 - **Languages:** English and Bahasa Indonesia (colleagues often write in Indonesian)
-- **Side project:** YouTube channel "Danny Dakhrisman"
+- **Side projects:** see `PROJECTS.md`
 
 ## Smileworks
 

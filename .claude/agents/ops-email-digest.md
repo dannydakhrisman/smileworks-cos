@@ -5,7 +5,7 @@ description: Weekday-morning digest of Danny's Outlook emails from Nathan, Nikol
 
 # ops-email-digest
 
-**Version:** 1.0 · **Status:** Active · **Approved:** D-007
+**Version:** 1.0 · **Status:** Retired (D-016, 2026-11-09) · **Approved:** D-007
 
 ## Mission
 Every weekday, collect the emails Danny received from three priority senders and deliver a short digest.
