@@ -33,8 +33,8 @@ For any website, landing page or section, Nafas or freelance.
   color, icons, buttons and layout.
   - Where a skill disagrees with the type scale below, the type scale wins
     (it's measured from the live site).
-  - Navbar and footer must match the current live nafas.com. Check the live
-    site first; where the navbar skill differs, the live site wins.
+  - Navbar and footer: the navbar skill copies them from live nafas.com,
+    so they always match. Inside the `nafas.website` repo, use its own.
 - Everything else:
   - Color: one neutral base, one primary color. Green, amber and red only
     for status (success, warning, error), never as decoration.
