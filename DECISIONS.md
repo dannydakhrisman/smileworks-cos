@@ -4,6 +4,7 @@ Newest first. Every entry was approved by Danny.
 
 | ID | Date | Decision | Why |
 |---|---|---|---|
+| D-017 | 2026-11-09 | Added `CLAUDE.md`: the Chief of Staff role and rules load automatically in this folder, and every session starts with an 8-point health check (OK in one line, or a list of problems waiting for Danny's yes) | Without it, opening Claude Code here did not load the operating model. The check catches small problems early |
 | D-016 | 2026-11-09 | Retired `ops-email-digest`. Its scheduled task (`trig_016MKk9M7drvVZ5QcWpMUFZZ`) is paused; the agent file and past outputs stay in git history. The `nafas-danny-ai` morning brief no longer summarizes email either | Danny doesn't need email summaries |
 | D-015 | 2026-11-09 | This setup (D-010 to D-015) is on trial until 2026-11-23, then reviewed rule by rule | Danny keeps only what actually helps |
 | D-014 | 2026-11-09 | Corrected twice becomes a written rule: in the project's Read first file, a playbook or `CONTEXT.md` | The same mistake is never corrected a third time |
