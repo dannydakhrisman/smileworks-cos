@@ -67,3 +67,8 @@ For any website, landing page or section, Nafas or freelance.
 - Nafas: open a PR into `dev` as `nafas-danny`, following its CHANGELOG
   rule. Danny does the merge. Done when the PR is open.
 - Delete the screenshots from step 5.
+- Update: same steps, next version number (v1.1 → v1.2).
+- Revert: when Danny says "go back to v1.1", restore that version as a
+  new commit (the history stays intact), tag it as the next version, and
+  add a CHANGELOG line saying it reverts to v1.1. Only with Danny's yes.
+  Nafas: revert through a PR into `dev`, like any other change.
