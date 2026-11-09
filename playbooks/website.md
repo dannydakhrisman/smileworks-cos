@@ -78,11 +78,29 @@ For any website, landing page or section, Nafas or freelance.
 ## 6. Ship (this is "done")
 - Freelance: add a version tag and one CHANGELOG line, then push
   as `dannydakhrisman`. Done when it's on GitHub.
-- Nafas: open a PR into `dev` as `nafas-danny`, following its CHANGELOG
-  rule. Danny does the merge. Done when the PR is open.
+- Nafas: follow the 3 steps below. Done when it's live on nafas.com.
 - Delete the screenshots from step 5.
 - Update: same steps, next version number (v1.1 → v1.2).
 - Revert: when Danny says "go back to v1.1", restore that version as a
   new commit (the history stays intact), tag it as the next version, and
   add a CHANGELOG line saying it reverts to v1.1. Only with Danny's yes.
   Nafas: revert through a PR into `dev`, like any other change.
+
+### Nafas: 3 steps to production
+1. Preview on pages.nafas.systems
+   - Build in its own folder, `nafas-danny-ai/web-dev/YYYYMMDD-<slug>-vN`,
+     with `index.html` at the root and every link relative.
+   - In Safari: pages.nafas.systems/member/dashboard → New site → name +
+     slug → upload the folder → Create site. Updating: open the site and
+     upload the next version's folder. Keep the slug so the link stays.
+   - If it asks for a login, stop and ask Danny. Never type his password.
+   - Send Danny the link `pages.nafas.systems/s/<slug>/` + screenshots.
+2. GitHub (after Danny's yes on the preview)
+   - Apply the change to `nafas.website` on a branch, following its
+     `AGENTS.md`, plus one line under Unreleased in its CHANGELOG.
+   - Open a PR into `dev` as `nafas-danny`. Merge only when Danny says
+     "merge". Then check it on nafas.dev.
+3. Production
+   - Only when Danny asks and confirms he checked nafas.dev on a computer
+     and a phone: run the "Deploy to nafas.com" workflow.
+   - Never push or merge to `main` directly.
