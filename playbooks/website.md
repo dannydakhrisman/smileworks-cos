@@ -7,6 +7,10 @@ For any website, landing page or section, Nafas or freelance.
   own rules (`AGENTS.md`) and its skills.
 - Input can be anything: Figma, a wireframe link, a reference site, a brief.
   Say back in 3 lines what you'll build. Ask only if something is missing.
+- Reference sites: read the page, and ask Danny for a screenshot of the part
+  he means. Page readers often drop images and charts, so the look can be missed.
+- Decide the language and date format up front (e.g. US English, "November 15,
+  2026") and write it in the project's `CLAUDE.md`.
 
 ## 2. Plan (wait for Danny's yes)
 - List the sections in order, one line each, plus the look: type, colors,
@@ -30,6 +34,15 @@ For any website, landing page or section, Nafas or freelance.
   - Move means move. Don't redesign it or add new elements.
   - For a small change, keep the current layout as it is.
   - Fix every instance on every page, not only the one in the screenshot.
+- Spacing: set one rhythm per site (between sections, heading to content,
+  panel to panel) and write the numbers down. Measure it with a script, don't
+  eyeball it.
+- Interactions: check what else changes on hover, tap, search or empty
+  results (nothing should dim, shift or rewrap that wasn't meant to).
+- Docs: a guide for someone who writes content covers only what to write. Layout
+  and design notes go in a separate file for whoever builds the pages.
+- Sample content: mark it clearly while it is a draft. If the marks are taken
+  off, list what still needs review before launch.
 - When Danny rejects a look, add the reason to the "Don't" list above.
 - Real content and real images only. No lorem ipsum.
 - Works on phone and desktop.
@@ -85,6 +98,9 @@ used on landing.page):
 - [ ] Nothing looks AI-made
 - [ ] No broken layout, all text readable, no sideways scroll on phone
 - [ ] Every number has a real source; none made up or rounded to look better
+- [ ] Spacing measured against the site's rhythm, at desktop and phone width
+- [ ] Hover, search and empty states checked, not only the default view
+- [ ] Every sum or conversion in the text re-done (e.g. distance ÷ speed)
 
 ## 5. Show Danny → wait for yes
 - Show a desktop and a phone screenshot with the result.
