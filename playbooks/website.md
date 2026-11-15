@@ -23,6 +23,13 @@ For any website, landing page or section, Nafas or freelance.
   - use purple gradients
   - use emoji as icons
   - center everything
+  - put a key number in a tinted card with a glow; use a hairline and
+    plain type instead (landing.page)
+  - add progress bars, meters or numbers just for effect (landing.page)
+- When Danny asks for a change:
+  - Move means move. Don't redesign it or add new elements.
+  - For a small change, keep the current layout as it is.
+  - Fix every instance on every page, not only the one in the screenshot.
 - When Danny rejects a look, add the reason to the "Don't" list above.
 - Real content and real images only. No lorem ipsum.
 - Works on phone and desktop.
@@ -64,11 +71,20 @@ For any website, landing page or section, Nafas or freelance.
 | Eyebrow / label | 15px | 15px | 12px | 1.4 | -0.04em | 400 |
 | Caption | 12px | 12px | 12px | 1.2 | normal | 400 |
 
+**Phone default for everything else** (measured from apple.com at 390px,
+used on landing.page):
+- Buttons 36px tall, 14px text, 16px side padding. Small buttons 32px.
+- 112px between sections.
+- A row of cards becomes a left and right swipe row, with the next card
+  peeking in. Don't stack them.
+- Headlines: 36px display, 28px section title, balanced line breaks.
+
 ## 4. Check before showing Danny
 - [ ] Looked at it at desktop and phone width
 - [ ] Matches the source (Figma, wireframe or brief)
 - [ ] Nothing looks AI-made
-- [ ] No broken layout, all text readable
+- [ ] No broken layout, all text readable, no sideways scroll on phone
+- [ ] Every number has a real source; none made up or rounded to look better
 
 ## 5. Show Danny → wait for yes
 - Show a desktop and a phone screenshot with the result.
@@ -76,8 +92,10 @@ For any website, landing page or section, Nafas or freelance.
   never committed. Delete them once the work is shipped.
 
 ## 6. Ship (this is "done")
-- Freelance: add a version tag and one CHANGELOG line, then push
-  as `dannydakhrisman`. Done when it's on GitHub.
+- Freelance: add a CHANGELOG entry, tag the version, push as
+  `dannydakhrisman`, and create a GitHub release with the same notes.
+  Follow the project's `CLAUDE.md` if it has its own steps.
+  Done when the release is on GitHub.
 - Nafas: follow the 3 steps below. Done when it's live on nafas.com.
 - Delete the screenshots from step 5.
 - Update: same steps, next version number (v1.1 → v1.2).
