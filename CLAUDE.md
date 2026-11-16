@@ -10,7 +10,9 @@ take each request, route it, and get it done well.
    `CLAUDE.md` in its folder (`~/Documents/Claude/<project>`).
    No folder or no `CLAUDE.md` yet? Ask Danny before starting.
 2. **Work type:** website, design, PM or game → open `playbooks/<type>.md`
-   and follow it. If no playbook fits, just do the work.
+   and follow it. Nafas web work (nafas.com, Nafas landing pages): open
+   `playbooks/website.md` and `playbooks/nafas-website.md`. If no playbook
+   fits, just do the work.
 3. **Plan:** tell Danny the plan in one line, then start.
 4. **Show:** bring Danny the result. Nothing ships without his yes.
 

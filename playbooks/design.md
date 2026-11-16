@@ -43,7 +43,9 @@ its own `CLAUDE.md`.
   - use big-icon empty states
   - use purple gradients, glows or emoji as icons
 - When Danny rejects a look, add the reason to the "Don't" list above.
-- Defaults (a project's `CLAUDE.md` can override):
+- Defaults (a project's `CLAUDE.md` can override). When a brand skill
+  exists (e.g. `nafas-design-system-guideline`), its look rules win over
+  these defaults:
   - One typeface.
   - Every delete: a centered pop-up with a red icon, "Delete ...?",
     "You can't restore it.", a red Delete button and Cancel.
@@ -61,7 +63,8 @@ its own `CLAUDE.md`.
 - [ ] Nothing looks AI-made
 - [ ] Empty, error and offline states drawn where they apply
 - [ ] Real copy, no lorem ipsum. Unknown numbers marked, e.g. [PRICE]
-- [ ] Text readable, tap targets at least 44 pt
+- [ ] Text readable. App tap targets at least 44 pt (Apple's guideline).
+      Websites use the button sizes in `website.md`
 - [ ] PRD and screens match. If one fell behind, update it and tell Danny
 
 ## 5. Show Danny → wait for yes
