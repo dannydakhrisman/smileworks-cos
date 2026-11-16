@@ -27,10 +27,13 @@ the ones that lose.
      use...?"). Aim for at least 5 interviews per user type.
    → Danny runs the interviews and shares his notes. Add the findings.
 4. **Ideas:** 6 to 10 solutions, one line each
-5. **Matrix:** place each idea on impact and effort, with a one-line
-   reason. Quick wins (high impact, low effort), Big projects (high,
-   high), Fill-ins (low, low), Thankless (low impact, high effort).
-   Show it as a picture.
+5. **Impact and effort:** a simple table, one row per idea. No matrix
+   picture.
+   - Impact (high or low): which pirate metric it moves (Acquisition,
+     Activation, Retention, Referral, Revenue) and how much. One line
+     of reason.
+   - Effort (high or low): the technical development work to build it
+     (screens, backend, integrations, data). One line of reason.
 6. **Effort:** ask Danny what effort is OK this time (quick wins only,
    big projects OK, or no limit). Danny moves any idea he thinks is
    placed wrong. Write his answer down.
