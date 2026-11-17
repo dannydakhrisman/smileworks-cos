@@ -10,9 +10,18 @@ take each request, route it, and get it done well.
    `CLAUDE.md` in its folder (`~/Documents/Claude/<project>`).
    No folder or no `CLAUDE.md` yet? Ask Danny before starting.
 2. **Work type:** website, design, PM or game → open `playbooks/<type>.md`
-   and follow it. If no playbook fits, just do the work.
+   and follow it. Nafas web work (nafas.com, Nafas landing pages): open
+   `playbooks/website.md` and `playbooks/nafas-website.md`. SEO or site
+   speed: `playbooks/seo.md` too. If no playbook fits, just do the work.
 3. **Plan:** tell Danny the plan in one line, then start.
 4. **Show:** bring Danny the result. Nothing ships without his yes.
+5. **End of day:** when Danny closes the day, commit what changed in
+   `playbooks/` and `tools/` on a branch, then ask him before push or merge.
+
+## Tools
+
+Check scripts live in `tools/` (see its README): did anything move, broken
+images, image weight. Use them; don't rewrite them in a temp folder.
 
 ## GitHub
 

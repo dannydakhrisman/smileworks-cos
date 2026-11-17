@@ -1,10 +1,10 @@
 # Playbook: website
 
-For any website, landing page or section, Nafas or freelance.
+For any website, landing page or section, for any client. General rules
+only: no brand details here. Nafas work: also follow `nafas-website.md`.
 
 ## 1. Understand
-- Read the project's `CLAUDE.md`. For Nafas, also follow `nafas.website`'s
-  own rules (`AGENTS.md`) and its skills.
+- Read the project's `CLAUDE.md`.
 - Input can be anything: Figma, a wireframe link, a reference site, a brief.
   Say back in 3 lines what you'll build. Ask only if something is missing.
 - Reference sites: read the page, and ask Danny for a screenshot of the part
@@ -47,46 +47,46 @@ For any website, landing page or section, Nafas or freelance.
 - Real content and real images only. No lorem ipsum.
 - Works on phone and desktop.
 
+### Images and speed (every site, from the start)
+- Formats: photos in WebP. Share preview image (og:image) in JPG,
+  1200 × 630, because some apps don't show WebP previews. Tab icon in PNG.
+  Logos and icons in SVG.
+- Size: no bigger than the largest box the image fills, at 2x (3x on
+  phones). Measure cropped boxes (object-fit: cover) and tablets too.
+- Phones get their own smaller copies (`srcset` + `sizes`); computers keep
+  the full one.
+- The first image on screen is never lazy and gets `fetchpriority="high"`.
+  A video's still image is preloaded.
+- Images far below the first screen: `loading="lazy"`.
+- The main font is preloaded (`<link rel="preload" as="font" crossorigin>`).
+- Check with `tools/image-weight.mjs` and `tools/broken-images.mjs`.
+
 ### Design system
-- Nafas: load the skills `nafas-website-design-system`, `nafas-website-icons`,
-  `nafas-website-navbar` and `nafas-website-typescale`, and follow them for
-  color, icons, buttons and layout.
-  - Where a skill disagrees with the type scale below, the type scale wins
-    (it's measured from the live site).
-  - Navbar and footer: the navbar skill copies them from live nafas.com,
-    so they always match. Inside the `nafas.website` repo, use its own.
-- Everything else:
+- A brand with its own design system or skills: follow those for color,
+  icons, type and buttons. They win over the defaults below.
+- Defaults:
   - Color: one neutral base, one primary color. Green, amber and red only
     for status (success, warning, error), never as decoration.
   - Icons: one icon set per site, one line weight, one size grid.
     No mixing sets.
 
 ### Type
-- Nafas: SF Pro Display, using the Nafas type scale below
-  (measured from nafas.com/residential on 2026-11-09).
-- Everything else: Inter. If the project has its own brand font, use that.
+- Font: the project's brand font. No brand font? Inter.
 - One type scale per site, no random sizes. 2 to 3 weights at most.
 - Letter spacing normal by default. Only big headlines may go slightly tighter.
 
-**Nafas type scale.** Breakpoints: Desktop ≥1440px · Tablet 810 to 1439px · Phone ≤809px.
+**Buttons** (measured from apple.com at 1440px and 390px, 2026-11-16).
+Pill shape, regular weight.
 
-| Role | Desktop | Tablet | Phone | Line height | Letter spacing | Weight |
-|---|---|---|---|---|---|---|
-| Display (hero headline) | 72px | 72px | 34px | 1.1 (phone 1.2) | normal | 500 |
-| Hero subtitle | 28px | 28px | 16px | 1.25 (phone 1.3) | normal | 400 |
-| Section title | 52px | 42px | 28px | 1.2 | normal | 400 |
-| Sub-section title | 42px | 38px | 24px | 1.2 | normal | 400 |
-| Lead text | 24px | 24px | 16px | 1.2 (phone 1.25) | normal | 400 |
-| Card title | 28px | 28px | 24px | 1.2 (phone 1.1) | normal | 500 |
-| Body large | 21px | 21px | 16px | 1.2 | normal | 400 |
-| Body | 16px | 16px | 14px | 1.2 to 1.5 | normal | 400 |
-| Button (large / small) | 21 / 15px | 21 / 15px | 15px | 1.2 | normal | 400 |
-| Eyebrow / label | 15px | 15px | 12px | 1.4 | -0.04em | 400 |
-| Caption | 12px | 12px | 12px | 1.2 | normal | 400 |
+| Button | Desktop | Phone |
+|---|---|---|
+| Main | 44px tall, 17px text, 21px side padding | 36px tall, 14px text, 15px side padding |
+| Small | 36px tall, 14px text, 15px side padding | 32px tall, 14px text |
+
+These are web sizes. App screens use 44pt tap targets (`design.md`).
 
 **Phone default for everything else** (measured from apple.com at 390px,
 used on landing.page):
-- Buttons 36px tall, 14px text, 16px side padding. Small buttons 32px.
 - 112px between sections.
 - A row of cards becomes a left and right swipe row, with the next card
   peeking in. Don't stack them.
@@ -101,6 +101,8 @@ used on landing.page):
 - [ ] Spacing measured against the site's rhythm, at desktop and phone width
 - [ ] Hover, search and empty states checked, not only the default view
 - [ ] Every sum or conversion in the text re-done (e.g. distance ÷ speed)
+- [ ] Change to an existing site: nothing else moved (`tools/layout-diff.mjs`)
+      and no broken images (`tools/broken-images.mjs`). See `tools/README.md`
 
 ## 5. Show Danny → wait for yes
 - Show a desktop and a phone screenshot with the result.
@@ -112,29 +114,9 @@ used on landing.page):
   `dannydakhrisman`, and create a GitHub release with the same notes.
   Follow the project's `CLAUDE.md` if it has its own steps.
   Done when the release is on GitHub.
-- Nafas: follow the 3 steps below. Done when it's live on nafas.com.
 - Delete the screenshots from step 5.
 - Update: same steps, next version number (v1.1 → v1.2).
 - Revert: when Danny says "go back to v1.1", restore that version as a
   new commit (the history stays intact), tag it as the next version, and
   add a CHANGELOG line saying it reverts to v1.1. Only with Danny's yes.
-  Nafas: revert through a PR into `dev`, like any other change.
 
-### Nafas: 3 steps to production
-1. Preview on pages.nafas.systems
-   - Build in its own folder, `nafas-danny-ai/web-dev/YYYYMMDD-<slug>-vN`,
-     with `index.html` at the root and every link relative.
-   - In Safari: pages.nafas.systems/member/dashboard → New site → name +
-     slug → upload the folder → Create site. Updating: open the site and
-     upload the next version's folder. Keep the slug so the link stays.
-   - If it asks for a login, stop and ask Danny. Never type his password.
-   - Send Danny the link `pages.nafas.systems/s/<slug>/` + screenshots.
-2. GitHub (after Danny's yes on the preview)
-   - Apply the change to `nafas.website` on a branch, following its
-     `AGENTS.md`, plus one line under Unreleased in its CHANGELOG.
-   - Open a PR into `dev` as `nafas-danny`. Merge only when Danny says
-     "merge". Then check it on nafas.dev.
-3. Production
-   - Only when Danny asks and confirms he checked nafas.dev on a computer
-     and a phone: run the "Deploy to nafas.com" workflow.
-   - Never push or merge to `main` directly.
