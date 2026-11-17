@@ -47,6 +47,20 @@ only: no brand details here. Nafas work: also follow `nafas-website.md`.
 - Real content and real images only. No lorem ipsum.
 - Works on phone and desktop.
 
+### Images and speed (every site, from the start)
+- Formats: photos in WebP. Share preview image (og:image) in JPG,
+  1200 × 630, because some apps don't show WebP previews. Tab icon in PNG.
+  Logos and icons in SVG.
+- Size: no bigger than the largest box the image fills, at 2x (3x on
+  phones). Measure cropped boxes (object-fit: cover) and tablets too.
+- Phones get their own smaller copies (`srcset` + `sizes`); computers keep
+  the full one.
+- The first image on screen is never lazy and gets `fetchpriority="high"`.
+  A video's still image is preloaded.
+- Images far below the first screen: `loading="lazy"`.
+- The main font is preloaded (`<link rel="preload" as="font" crossorigin>`).
+- Check with `tools/image-weight.mjs` and `tools/broken-images.mjs`.
+
 ### Design system
 - A brand with its own design system or skills: follow those for color,
   icons, type and buttons. They win over the defaults below.

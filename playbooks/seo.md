@@ -39,11 +39,26 @@ nafas-website.md to ship.
 3. One h1 per page, without changing the look.
 4. Alt text: describe content photos, logos get the organization's name,
    background photos and icons keep alt="".
-5. Speed:
-   - Resize oversized images to the largest size any screen shows them.
-     Measure cropped (object-fit: cover) boxes and tablets, at 2x and 3x.
-   - Give phones their own smaller copies (srcset); computers keep the original.
-   - The main image loads first: never lazy, high priority, video stills preloaded.
+5. Speed: apply "Images and speed" from `website.md` to what's already
+   there (formats, sizes, phone copies, main image first, lazy below,
+   font preload).
+6. Thin pages (a placeholder with no real content yet): `noindex` and out
+   of the sitemap. Ask the owner first, they may have plans for the page.
+7. Tracking scripts: list each one (tag, ID, what loads it) and ask the
+   marketing owner before removing any. Their numbers must stay real.
+
+## AI answers (GEO / AEO)
+ChatGPT, Claude, Perplexity and Google's AI answers read the same pages as
+search. Make them easy to read and quote:
+- AI crawlers allowed: robots.txt lets in GPTBot, ClaudeBot, PerplexityBot,
+  Google-Extended and the rest, and pages answer them with 200. The text is
+  in the HTML, not drawn later by scripts.
+- `llms.txt` at the site root: one paragraph on what the company is, where
+  it works and how to reach it, then every main page as
+  `- [Title](url): description`, grouped by topic.
+- Organization data on Home: legal name, description, email, countries
+  served, a contact per country, social links, and sister organizations
+  (e.g. a foundation).
 
 ## 5. Check before showing Danny
 - [ ] No duplicate titles in any region; titles and descriptions within length
@@ -53,6 +68,7 @@ nafas-website.md to ship.
       broken images (`tools/broken-images.mjs`)
 - [ ] Locked pages untouched (checked by script, not by eye)
 - [ ] Every number and date has a source, or the owner chose it
+- [ ] `llms.txt` answers 200 as text, also for an AI crawler's user agent
 
 ## 6. Ship and follow up
 - Small releases, one theme each. Verify on the live site after.
@@ -62,5 +78,6 @@ nafas-website.md to ship.
 ## Don't
 - guess dates, numbers or claims
 - change the design for SEO without asking
+- remove tracking without the marketing owner's yes
 - describe decorative images
 - trust one screenshot: measure every instance
