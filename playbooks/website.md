@@ -87,6 +87,8 @@ used on landing.page):
 - [ ] Spacing measured against the site's rhythm, at desktop and phone width
 - [ ] Hover, search and empty states checked, not only the default view
 - [ ] Every sum or conversion in the text re-done (e.g. distance ÷ speed)
+- [ ] Change to an existing site: nothing else moved (`tools/layout-diff.mjs`)
+      and no broken images (`tools/broken-images.mjs`). See `tools/README.md`
 
 ## 5. Show Danny → wait for yes
 - Show a desktop and a phone screenshot with the result.
