@@ -7,14 +7,14 @@ only: no brand details here. Nafas work: also follow `nafas-website.md`.
 - Read the project's `CLAUDE.md`.
 - Input can be anything: Figma, a wireframe link, a reference site, a brief.
   Say back in 3 lines what you'll build. Ask only if something is missing.
-- Reference sites: read the page, and ask Danny for a screenshot of the part
-  he means. Page readers often drop images and charts, so the look can be missed.
+- Reference sites: read the page, and ask h0ney for a screenshot of the part
+  they mean. Page readers often drop images and charts, so the look can be missed.
 - Decide the language and date format up front (e.g. US English, "November 15,
   2026") and write it in the project's `CLAUDE.md`.
 
-## 2. Plan (wait for Danny's yes)
+## 2. Plan (wait for h0ney's yes)
 - List the sections in order, one line each, plus the look: type, colors,
-  spacing. Build only after Danny says yes.
+  spacing. Build only after h0ney says yes.
 - Small change (a fix or tweak, not a new section)? Skip the plan, go to build.
 
 ## 3. Build
@@ -30,7 +30,7 @@ only: no brand details here. Nafas work: also follow `nafas-website.md`.
   - put a key number in a tinted card with a glow; use a hairline and
     plain type instead (landing.page)
   - add progress bars, meters or numbers just for effect (landing.page)
-- When Danny asks for a change:
+- When h0ney asks for a change:
   - Move means move. Don't redesign it or add new elements.
   - For a small change, keep the current layout as it is.
   - Fix every instance on every page, not only the one in the screenshot.
@@ -43,7 +43,7 @@ only: no brand details here. Nafas work: also follow `nafas-website.md`.
   and design notes go in a separate file for whoever builds the pages.
 - Sample content: mark it clearly while it is a draft. If the marks are taken
   off, list what still needs review before launch.
-- When Danny rejects a look, add the reason to the "Don't" list above.
+- When h0ney rejects a look, add the reason to the "Don't" list above.
 - Real content and real images only. No lorem ipsum.
 - Works on phone and desktop.
 
@@ -77,7 +77,7 @@ only: no brand details here. Nafas work: also follow `nafas-website.md`.
   A new link (or `?v=2`) shows the new card.
 
 ### Analytics (GA4)
-- Danny owns the property and adds the client later. Write the plan in the
+- h0ney owns the property and adds the client later. Write the plan in the
   project (`ANALYTICS.md`): ID, events, custom dimensions, launch steps.
 - The tracking script runs only on the real domain, so local previews and
   test copies send nothing. A `?consent=preview` switch shows the banner and
@@ -143,7 +143,7 @@ used on landing.page):
   peeking in. Don't stack them.
 - Headlines: 36px display, 28px section title, balanced line breaks.
 
-## 4. Check before showing Danny
+## 4. Check before showing h0ney
 - [ ] Looked at it at desktop and phone width
 - [ ] Matches the source (Figma, wireframe or brief)
 - [ ] Nothing looks AI-made
@@ -158,7 +158,7 @@ used on landing.page):
       styling new markup (e.g. links inside `<noscript>`); fix the markup,
       don't ignore the diff
 
-## 5. Show Danny → wait for yes
+## 5. Show h0ney → wait for yes
 - Show a desktop and a phone screenshot with the result.
 - Save screenshots in a temporary folder outside the project, so they are
   never committed. Delete them once the work is shipped.
@@ -170,7 +170,7 @@ used on landing.page):
   Done when the release is on GitHub.
 - Delete the screenshots from step 5.
 - Update: same steps, next version number (v1.1 → v1.2).
-- Revert: when Danny says "go back to v1.1", restore that version as a
+- Revert: when h0ney says "go back to v1.1", restore that version as a
   new commit (the history stays intact), tag it as the next version, and
-  add a CHANGELOG line saying it reverts to v1.1. Only with Danny's yes.
+  add a CHANGELOG line saying it reverts to v1.1. Only with h0ney's yes.
 

@@ -60,7 +60,7 @@ search. Make them easy to read and quote:
   served, a contact per country, social links, and sister organizations
   (e.g. a foundation).
 
-## 5. Check before showing Danny
+## 5. Check before showing h0ney
 - [ ] No duplicate titles in any region; titles and descriptions within length
 - [ ] Every title and description matches the approved table character for
       character, checked by script (a description once grew from 154 to 162)

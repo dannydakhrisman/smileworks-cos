@@ -12,7 +12,7 @@ Don't use `~/Documents/Claude/nafas-danny-ai` (its `skill/` copies and
   `nafas-website-typescale`, `nafas-website-icons` and `nafas-website-navbar`.
   Load them. Don't use `nafas-website-builder`.
 - **Type:** live nafas.com/residential is the benchmark for every Nafas
-  project (Danny, 16 November 2026). Use the updated typescale skill, measured
+  project (h0ney, 16 November 2026). Use the updated typescale skill, measured
   from /residential. Until it's uploaded on claude.ai, read
   `~/Documents/Claude/nafas-skills-upload/nafas-website-typescale/SKILL.md`.
   When anything disagrees with live /residential, re-measure it.
@@ -21,7 +21,7 @@ Don't use `~/Documents/Claude/nafas-danny-ai` (its `skill/` copies and
   prices from shop.nafas.com.
 
 ## 1. Before you start
-- Only touch `nafas.website` when Danny asks for website work in this
+- Only touch `nafas.website` when h0ney asks for website work in this
   session. Other sessions work there in parallel.
 - Repo change: `git fetch && git pull`, then a new branch off `dev`. Use a
   separate worktree if the clone has someone else's uncommitted work.
@@ -44,26 +44,26 @@ Don't use `~/Documents/Claude/nafas-danny-ai` (its `skill/` copies and
   wrapper is `IGNORE="main.nf-main"`), `broken-images.mjs`, `image-weight.mjs`.
 - Open it in Safari and scroll to the change.
 
-## 4. Preview on pages.nafas.systems (only when Danny says publish)
+## 4. Preview on pages.nafas.systems (only when h0ney says publish)
 - Zip the pages in a scratch folder: `index.html` at the top, every link
   relative, only the images that are used.
 - In Safari, in its own window: pages.nafas.systems/member/dashboard →
   New site (or Deploy on the existing site, so the link stays) → name + slug
   → attach the zip with a page script (the file picker can't be driven) →
   Create & deploy.
-- Login page? Stop and ask Danny. Never type his password.
+- Login page? Stop and ask h0ney. Never type their password.
 - Open `pages.nafas.systems/s/<slug>/` in Safari and check that pages,
-  fonts and images load. Send Danny the link + screenshots.
+  fonts and images load. Send h0ney the link + screenshots.
 
-## 5. PR into dev (after Danny's yes on the preview)
+## 5. PR into dev (after h0ney's yes on the preview)
 - Push as `nafas-danny` and open a pull request into `dev`.
 - One CHANGELOG line under Unreleased: "(#PR, requested by <who>)". Ask
-  Danny who requested it. It's often Nathan or Thousif, not Danny.
-- Merge only when Danny says "merge". Then check it on nafas.dev.
+  h0ney who requested it. It's often Nathan or Thousif, not h0ney.
+- Merge only when h0ney says "merge". Then check it on nafas.dev.
 
 ## 6. Release to nafas.com
-- Only when Danny asks AND has checked nafas.dev on a computer and a phone.
-- Show `git diff origin/main origin/dev` first, so he knows what ships.
+- Only when h0ney asks AND has checked nafas.dev on a computer and a phone.
+- Show `git diff origin/main origin/dev` first, so they know what ships.
 - Turn Unreleased into the next version, then run the "Deploy to nafas.com"
   workflow.
 - Never push or merge to `main` directly.
