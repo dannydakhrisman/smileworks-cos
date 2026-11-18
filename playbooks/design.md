@@ -8,7 +8,7 @@ its own `CLAUDE.md`.
 
 ## 1. Understand
 - Read the project's `CLAUDE.md` for its look: fonts, colors, design system,
-  brand rules. Missing? Ask Danny once and write the answers into that
+  brand rules. Missing? Ask h0ney once and write the answers into that
   `CLAUDE.md`.
 - Nafas app: load `nafas-design-system-guideline`. Motion goes through
   `nafas-animation-guideline`, copy in other languages through
@@ -18,7 +18,7 @@ its own `CLAUDE.md`.
 - Decide up front: platform (iOS, Android, both, web) and languages
   (right-to-left too, if Arabic).
 
-## 2. Plan (wait for Danny's yes)
+## 2. Plan (wait for h0ney's yes)
 - List the screens in journey order, one line each, with an ID:
   2 letters for the journey + 2 digits (ON-01 onboarding, HM-01 home).
   Never reuse a number. Use the same IDs in the PRD, screen names and
@@ -42,7 +42,7 @@ its own `CLAUDE.md`.
   - fill screens with tiny grey captions
   - use big-icon empty states
   - use purple gradients, glows or emoji as icons
-- When Danny rejects a look, add the reason to the "Don't" list above.
+- When h0ney rejects a look, add the reason to the "Don't" list above.
 - Defaults (a project's `CLAUDE.md` can override). When a brand skill
   exists (e.g. `nafas-design-system-guideline`), its look rules win over
   these defaults:
@@ -54,20 +54,20 @@ its own `CLAUDE.md`.
 - Draw the other states too: empty, loading, error, offline. Edge cases in
   the PRD get their own screens.
 - Motion: write the spec (what moves, duration, easing), not code.
-- When Danny asks for a change:
+- When h0ney asks for a change:
   - Move means move. Don't redesign it.
-  - Fix every instance on every screen, not only the one he pointed at.
+  - Fix every instance on every screen, not only the one they pointed at.
 
-## 4. Check before showing Danny
+## 4. Check before showing h0ney
 - [ ] Every screen has an ID and matches the plan
 - [ ] Nothing looks AI-made
 - [ ] Empty, error and offline states drawn where they apply
 - [ ] Real copy, no lorem ipsum. Unknown numbers marked, e.g. [PRICE]
 - [ ] Text readable. App tap targets at least 44 pt (Apple's guideline).
       Websites use the button sizes in `website.md`
-- [ ] PRD and screens match. If one fell behind, update it and tell Danny
+- [ ] PRD and screens match. If one fell behind, update it and tell h0ney
 
-## 5. Show Danny → wait for yes
-- Send the link and screenshots. Nothing ships without his yes.
+## 5. Show h0ney → wait for yes
+- Send the link and screenshots. Nothing ships without their yes.
 - Write the link into the project's `CLAUDE.md` so the next session
   finds it.

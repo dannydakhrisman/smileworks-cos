@@ -1,6 +1,6 @@
 # Smileworks CoS
 
-The Chief of Staff for Smileworks, Danny's brand for freelance work:
+The Chief of Staff for Smileworks, h0ney's brand for freelance work:
 websites, design, PM and games. The Chief of Staff is Claude Code. It takes
 each request, routes it to the right project and playbook, does the work,
 and brings back the result for a yes.
@@ -12,7 +12,7 @@ own folder and repo.
 ## How a request flows
 
 ```
-Danny asks for something
+h0ney asks for something
         |
         v
 +--------------------------+
@@ -31,7 +31,7 @@ Danny asks for something
         |
         v
 +--------------------------+
-| Show Danny -> yes        |  nothing ships without it
+| Show h0ney -> yes        |  nothing ships without it
 +--------------------------+
         |
         v
@@ -72,16 +72,16 @@ playbooks in this folder. Keep the repo cloned at
 
 ## How it learns
 
-When a project teaches something new (a mistake, a rule Danny sets, a check
+When a project teaches something new (a mistake, a rule h0ney sets, a check
 that would have caught a problem), it goes into the matching playbook or
 tool, often with the project it came from, e.g. "(landing.page)".
 Changes go on a branch and into `main` through a pull request, after
-Danny's yes.
+h0ney's yes.
 
 ## Ground rules
 
-- Nothing is pushed, merged, published, sent or deleted without Danny's yes.
-- Keep it simple: no extra files, agents or process unless Danny asks.
+- Nothing is pushed, merged, published, sent or deleted without h0ney's yes.
+- Keep it simple: no extra files, agents or process unless h0ney asks.
 - Done means checked: every page, breakpoint and language the change
   touches, by script where possible.
 - Pushes go out as `dannydakhrisman`, and Nafas repos as `nafas-danny`.
