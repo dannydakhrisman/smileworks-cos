@@ -59,7 +59,58 @@ only: no brand details here. Nafas work: also follow `nafas-website.md`.
   A video's still image is preloaded.
 - Images far below the first screen: `loading="lazy"`.
 - The main font is preloaded (`<link rel="preload" as="font" crossorigin>`).
+- WebP quality 92 by default: 80 smears fine detail (text, lines, maps).
+  Check that each new file is smaller than the old one; some photos grow at
+  92, then use 85 for those (landing.page).
 - Check with `tools/image-weight.mjs` and `tools/broken-images.mjs`.
+
+### Share card (og:image)
+- Build it as an HTML page from the site's own parts (logo, font, colors,
+  a still of the hero), not in a design app. Render it in headless Chrome
+  at 2x and scale it down to a 1200 × 630 JPG (`tools/chrome.mjs`). A text
+  change is then one edit and one render.
+- Keep the source HTML and the render script outside the site folder, so
+  they are never published.
+- Show the brand and what it makes (e.g. the products by name), not only a
+  slogan. Big type: the card is shown small in chats.
+- WhatsApp, Slack and LinkedIn keep the old preview for links already shared.
+  A new link (or `?v=2`) shows the new card.
+
+### Analytics (GA4)
+- Danny owns the property and adds the client later. Write the plan in the
+  project (`ANALYTICS.md`): ID, events, custom dimensions, launch steps.
+- The tracking script runs only on the real domain, so local previews and
+  test copies send nothing. A `?consent=preview` switch shows the banner and
+  prints events in the console instead.
+- Cookie banner only where the law asks (EU and UK), guessed from the
+  browser's time zone. Everyone else is tracked on arrival. Banner and
+  "No thanks" also on a Cookie settings link on the Privacy page, and the
+  Privacy page names the cookies and how long they are kept.
+- The banner never covers a button: a slim bar on desktop, one line on
+  phones. Check by script at every width that no `.btn` sits under it.
+- Events: one per goal (e.g. `generate_lead` with a `lead_type`), plus the
+  details you want to filter by. Create the custom dimensions on day one;
+  GA does not fill them in for the past.
+- An event can be starred as a key event only after GA has received it
+  (up to 24 hours). Plan that as a next-day step, with the funnel or path
+  report.
+- Test end to end before launch: serve a copy on another port with the
+  domain check pointed at it, visit it in Safari, and watch GA → Realtime.
+
+### Gate page (stealth or coming soon)
+- A passcode checked in the page's code keeps casual visitors out. It is not
+  security: the pages are still on the server. Real protection is at the
+  host (e.g. Cloudflare Access). Say so in the code and to the client.
+- Keep Privacy and Terms open. The gate gets `noindex`.
+- After the code, send the visitor back only to a page on the same site
+  (a `?next=` that starts with one `/`), never to another domain.
+- Load the next page in the background (hidden iframe) while the "connecting"
+  animation runs, so the animation is the loading screen and the page opens
+  from the cache.
+- The site's own look and the site's own parts (logo, footer, an animation
+  from the site). A reference site shows the idea, not the look to copy.
+- Turning it off is one line (`STEALTH = false`) plus a cache bump. Note the
+  temporary passcode in the project until the client gives the real one.
 
 ### Design system
 - A brand with its own design system or skills: follow those for color,
@@ -102,7 +153,10 @@ used on landing.page):
 - [ ] Hover, search and empty states checked, not only the default view
 - [ ] Every sum or conversion in the text re-done (e.g. distance ÷ speed)
 - [ ] Change to an existing site: nothing else moved (`tools/layout-diff.mjs`)
-      and no broken images (`tools/broken-images.mjs`). See `tools/README.md`
+      and no broken images (`tools/broken-images.mjs`). See `tools/README.md`.
+      Moved elements you didn't touch can come from the site's own script
+      styling new markup (e.g. links inside `<noscript>`); fix the markup,
+      don't ignore the diff
 
 ## 5. Show Danny → wait for yes
 - Show a desktop and a phone screenshot with the result.

@@ -62,6 +62,8 @@ search. Make them easy to read and quote:
 
 ## 5. Check before showing Danny
 - [ ] No duplicate titles in any region; titles and descriptions within length
+- [ ] Every title and description matches the approved table character for
+      character, checked by script (a description once grew from 154 to 162)
 - [ ] All structured data parses and links to real pages
 - [ ] Images render at the same size at 360 to 1920, none below what the screen needs
 - [ ] Nothing moved (`tools/layout-diff.mjs` before against after) and no
