@@ -54,7 +54,8 @@ the ones that lose.
 4. Deliverable: exactly what gets delivered
 5. Timeline: milestones with dates
 6. Success: 1 to 3 signals that show it worked (e.g. "50% of users finish
-   onboarding in week 1")
+   onboarding in week 1"). Check each signal is measured today. If not,
+   the tracking is part of the deliverable.
 7. Open questions (if any)
 
 ## 4. Check before showing h0ney

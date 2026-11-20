@@ -8,6 +8,13 @@ nafas-website.md to ship.
 - Read the project's CLAUDE.md. Ask once which pages or texts are locked.
 - Search Console (Google's search data): verify by domain (DNS record) if
   possible. Without data, do only the fixes that don't need it.
+- Search Console, first visit:
+  1. Submit the sitemap and check Google read every page.
+  2. Inspect the main pages: some may not be on Google at all (3 of 10 on
+     nafas.com).
+  3. Request indexing for those, about 10 a day (Google's limit).
+  4. Start the re-check ("Validate fix") for pages still marked noindex
+     from an old platform.
 
 ## 2. Audit (measure, don't guess)
 - Save a baseline before changing anything: the commit hash, the image
@@ -18,6 +25,12 @@ nafas-website.md to ship.
   meta description (unique, 160 or less), share tags (og, twitter) match,
   one h1, canonical and hreflang, structured data, robots.txt and sitemap,
   image alt text, image weight.
+- Pages served by another system (a CMS, a portal, a blog on another
+  server): list them with their titles and hand them to their owner. They
+  can be the biggest lever (nafas.com: the portal's article pages had the
+  most impressions and one shared title).
+- Split clicks into brand searches (the company name) and the rest. Growth
+  only counts in the rest.
 - Speed: Google PageSpeed on the key pages, phone and desktop. If the free
   service is over its limit, open pagespeed.web.dev in Safari. Note real
   visitors' data (what Google ranks on) apart from the lab score.
@@ -27,7 +40,9 @@ nafas-website.md to ship.
 
 ## 3. Plan (wait for yes)
 - A table of the exact new titles and descriptions per page, written from
-  the page's own content. Use the brand's voice skill and translation
+  the page's own content and the searches Search Console shows for that
+  page. When the owner locks the share text, change only `<title>` and the
+  meta description; og and twitter stay. Use the brand's voice skill and translation
   guideline when it has them.
 - Mark which changes are invisible (hidden head tags, structured data) and
   which change the look. Do the invisible ones first.
@@ -76,6 +91,12 @@ search. Make them easy to read and quote:
 - Small releases, one theme each. Verify on the live site after.
 - Monthly with Search Console: match titles to real searches, find topics
   people search for that have no page yet.
+- Judge new titles 2 to 3 weeks after release. Google takes that long to
+  show them.
+- Before reporting results, check that the site's goal (a form, a WhatsApp
+  click, a shop visit) is measured in analytics. Without it, report clicks
+  and position only, and name tracking as the next step (nafas.com: GA
+  couldn't see WhatsApp or shop clicks).
 
 ## Don't
 - guess dates, numbers or claims
