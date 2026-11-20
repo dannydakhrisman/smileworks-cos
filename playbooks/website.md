@@ -59,6 +59,15 @@ only: no brand details here. Nafas work: also follow `nafas-website.md`.
   A video's still image is preloaded.
 - Images far below the first screen: `loading="lazy"`.
 - The main font is preloaded (`<link rel="preload" as="font" crossorigin>`).
+- Nothing on the first screen fades or animates in. If it starts invisible,
+  Google finds no main element ("NO_LCP"); if it animates in, the main
+  element waits for the animation (a score card waited 2.0 s on nafas.com).
+- Before a speed fix, read PageSpeed's LCP breakdown: download time against
+  render delay. A long render delay is a script or an animation, not file
+  size, and fewer or smaller files won't move it.
+- Many stylesheets per page: combine them into one when the site is
+  published, not in the source files, so people keep editing the section
+  files (nafas.com: 18 files to 1, phone score 42 to 51).
 - WebP quality 92 by default: 80 smears fine detail (text, lines, maps).
   Check that each new file is smaller than the old one; some photos grow at
   92, then use 85 for those (landing.page).
@@ -157,6 +166,10 @@ used on landing.page):
       Moved elements you didn't touch can come from the site's own script
       styling new markup (e.g. links inside `<noscript>`); fix the markup,
       don't ignore the diff
+- [ ] Change to how pages are built or loaded (combined files, script
+      order): every page compared at desktop and phone width, not a sample.
+      Load-timing bugs show on some pages only (a Residential layout on
+      nafas.com measured before its fonts arrived)
 
 ## 5. Show h0ney → wait for yes
 - Show a desktop and a phone screenshot with the result.
