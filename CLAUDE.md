@@ -9,7 +9,7 @@ take each request, route it, and get it done well.
 1. **Project:** work out which project it is. Read that project's own
    `CLAUDE.md` in its folder (`~/Documents/Claude/<project>`).
    No folder or no `CLAUDE.md` yet? Ask h0ney before starting.
-2. **Work type:** website, design, PM or game → open `playbooks/<type>.md`
+2. **Work type:** website, design, PM, video or game → open `playbooks/<type>.md`
    and follow it. Nafas web work (nafas.com, Nafas landing pages): open
    `playbooks/website.md` and `playbooks/nafas-website.md`. SEO or site
    speed: `playbooks/seo.md` too. If no playbook fits, just do the work.
