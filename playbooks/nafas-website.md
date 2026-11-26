@@ -34,6 +34,31 @@ Don't use `~/Documents/Claude/nafas-danny-ai` (its `skill/` copies and
 - Links relative with `.html`. Videos only from cdn.nafas.com.
 - Header and footer: inside the repo, use its own. Outside, the navbar skill
   copies them from live nafas.com.
+- **Section spacing on phones: 64px above and below every section** (Nathan,
+  26 November 2026, copied from eightsleep.com, which uses 64 / 64 on every
+  section at 390). Measure from the section's edge to its first and last
+  visible thing (text, picture, card or button), not just the CSS padding:
+  inner boxes, fixed heights and absolutely placed cards add or hide space.
+  Heroes, full-screen and sticky scroll sections keep their own, and so do
+  logo strips, full-bleed photo banners, pictures that run to a section's
+  edge on purpose, and stacks of cards a few px apart (Foundation). Measure
+  with animations switched off: a reveal still moving (translateY 16px) reads
+  as 16px more room than there is. Page rules like
+  `.x[data-section="y"]` can outrank an override, so remeasure after adding
+  it. Nafas had 16 to 56px, which read as tight. Desktop and tablet: not
+  decided yet. Measure with `tools/section-spacing.mjs`.
+- **Type is SF Pro Display.** Inter was tried and undone on 26 November 2026
+  (Nathan), with the layout fixes made for it. A change of typeface or any
+  change on every page: Nathan checks nafas.dev before it is released.
+- **Line break on phones only:** `<br class="nf-hide-desktop nf-hide-tablet">`.
+- **A line wraps before it's full:** `text-wrap: pretty` or `balance` moves
+  words down early. Set `text-wrap-style: auto` (not the `text-wrap`
+  shorthand, which also undoes `white-space: nowrap`).
+- **Hero that fills the phone screen:** `100lvh` for the background,
+  `100svh` for where the content sits, so Safari's bar doesn't show the next
+  section.
+- **Hairline under a moving circle (Safari):** `will-change: transform;
+  backface-visibility: hidden` on it.
 
 ## 3. Check
 - Repo: run `python3 -I scripts/check_refs.py site`
@@ -42,6 +67,11 @@ Don't use `~/Documents/Claude/nafas-danny-ai` (its `skill/` copies and
   at 1440, 1000 and 390. Use `smileworks-cos/tools/`: `layout-diff.mjs`
   (old commit in a `git worktree` against the new one; the repo's own
   wrapper is `IGNORE="main.nf-main"`), `broken-images.mjs`, `image-weight.mjs`.
+- Prices, or anything on the ad pages (`/ads/...`): run
+  `node tools/nafas/price-check.mjs <repo site>` before a release and on
+  nafas.com after it. Ad pages keep their own copy of prices and styles, so a
+  change to Residential does not reach them by itself (the Qatar ad page
+  showed old 2 and 3 Bed prices from October to 26 November 2026).
 - Open it in Safari and scroll to the change.
 
 ## 4. Preview on pages.nafas.systems (only when h0ney says publish)
@@ -66,6 +96,11 @@ Don't use `~/Documents/Claude/nafas-danny-ai` (its `skill/` copies and
 - Show `git diff origin/main origin/dev` first, so they know what ships.
 - Turn Unreleased into the next version, then run the "Deploy to nafas.com"
   workflow.
+- Batch: small fixes go to nafas.dev through the day and ship in one or two
+  releases, not one each (26 November had 7). One session does the
+  releases; other sessions stop at "merged on dev".
+- Measure nafas.dev and nafas.com one at a time, never in parallel (two
+  headless Chromes on one port mixed up results).
 - Never push or merge to `main` directly.
 - Revert: a PR into `dev`, like any other change.
 
